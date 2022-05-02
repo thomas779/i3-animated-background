@@ -9,7 +9,7 @@ fi
 
 if [ -z "$2" ]
 then
-    interval="0.1"
+    interval="5"
 else
     interval=$2
 fi
@@ -19,6 +19,6 @@ do
     for image in $pattern;
     do
         # echo $image
-        feh --bg-center $image && sleep $interval;
+        feh --bg-fill $image && sleep $interval;
     done
 done
